@@ -7,6 +7,13 @@
 #     username, password, group and comment fields
 #     all the four fields separated by a TAB char
 #
+# An alternative when missing the mkpasswd command:
+# HASH=`python -c "import crypt; print crypt.crypt('$PASSWORD', '\$6\$$SALT')`
+#
+# If you want the passwd MD5 instead of SHA-512 hash:
+# HASH=`openssl passwd -1 $PASSWORD`
+#
+#
 # Author: Fabio Agostinho Boris
 #         github.com/fabioboris
 #
