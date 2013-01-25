@@ -3,6 +3,21 @@ linux-and-samba-create-users-from-csv
 
 Shell script that creates Linux and Samba users from a CSV file
 
+Usage examples
+--------------
+
+You can just run the script without parameters, and then input the file name:
+
+    $ sh create-users.sh
+    Enter the file name:
+    sample-user-list.csv
+    [...]
+
+Or, you can run the script with the file name as a parameter:
+
+    $ sh create-users.sh sample-user-list.csv
+    [...]
+
 License
 -------
 
